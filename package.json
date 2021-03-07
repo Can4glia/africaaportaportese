@@ -1,0 +1,29 @@
+{
+  "name": "africaaportaportese",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx mix --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Can4glia/africaaportaportese.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Can4glia/africaaportaportese/issues"
+  },
+  "homepage": "https://github.com/Can4glia/africaaportaportese#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "laravel-mix": "^6.0.13",
+    "postcss": "^8.2.7",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  }
+}
