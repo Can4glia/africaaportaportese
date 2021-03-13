@@ -2,10 +2,9 @@
   "name": "africaaportaportese",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "watch": "npx mix --watch",
-    "live": "npm run build"
+    "watch": "npx mix --watch"
   },
   "repository": {
     "type": "git",
