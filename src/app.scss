@@ -1,8 +1,25 @@
-body {
-  background-color: rgb(226, 123, 19);
+.ms_jumbotron {
 
-  nav {
-    background-color: brown;
-  }
+  min-height: 100vh;
+  width: 100%;
+  background-color: aqua;
 }
 
+img {
+
+  height: 100vh;
+  width: 100%;
+}
+
+.progress {
+
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 50vw;
+  ::after {
+    content: 'Work in progress...';
+  }
+}
