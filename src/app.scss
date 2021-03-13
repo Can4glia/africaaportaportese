@@ -10,7 +10,7 @@ img {
   height: 100vh;
   width: 100%;
 
-  @media screen and (max-width: $medium) {
+  @media screen and (max-width: 1000px) {
 
     transform: scale(2);
   }
@@ -24,7 +24,7 @@ img {
   left: 50%;
   transform: translate(-50%, 50%);
   width: 50vw;
-  
+
   ::after {
 
     content: 'Work in progress...';
