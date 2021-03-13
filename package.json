@@ -4,7 +4,8 @@
   "description": "sito-vetrina",
   "main": "index.html",
   "scripts": {
-    "watch": "npx mix --watch"
+    "watch": "npx mix --watch",
+    "prod": "npx mix --production"
   },
   "repository": {
     "type": "git",
