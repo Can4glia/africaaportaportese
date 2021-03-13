@@ -8,7 +8,7 @@
 /***/ (() => {
 
 $(document).ready(function () {
-  console.log("ready!");
+  console.log("developed by Can4glia");
 });
 
 /***/ }),
