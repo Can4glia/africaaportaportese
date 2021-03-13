@@ -9,7 +9,7 @@ img {
   width: 100%;
 }
 
-.progress {
+.ms_progress {
   position: absolute;
   z-index: 999;
   top: 50%;
@@ -17,6 +17,6 @@ img {
   transform: translate(-50%, 50%);
   width: 50vw;
 }
-.progress ::after {
+.ms_progress ::after {
   content: "Work in progress...";
 }
