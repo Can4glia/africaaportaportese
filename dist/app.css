@@ -23,8 +23,6 @@ img {
   transform: translate(-50%, 50%);
   width: 50vw;
 }
-
 .ms_progress ::after {
-
   content: "Work in progress...";
 }
