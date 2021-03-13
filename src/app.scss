@@ -2,13 +2,18 @@
 
   min-height: 100vh;
   width: 100%;
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.199);
 }
 
 img {
 
   height: 100vh;
   width: 100%;
+
+  @media screen and (max-width: $medium) {
+
+    transform: scale(2);
+  }
 }
 
 .ms_progress {
@@ -19,7 +24,9 @@ img {
   left: 50%;
   transform: translate(-50%, 50%);
   width: 50vw;
+  
   ::after {
+
     content: 'Work in progress...';
   }
 }
