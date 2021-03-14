@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/Can4glia/africaaportaportese.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bogolan", "portaportese", "africa", "rosaria", "tessuti"],
+  "author": "Can4glia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Can4glia/africaaportaportese/issues"
