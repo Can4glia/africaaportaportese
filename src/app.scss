@@ -17,18 +17,34 @@
   }
 }
 
-.ms_progress {
+.ms_ciao {
+
+  background-color: aquamarine;
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
+
+
 
   position: absolute;
   z-index: 999;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   width: 50vw;
-
-  ::after {
-
-    content: 'Work in progress...';
-  }
 }
 // end jumbotron
+
+
+.ms_chi-siamo {
+
+  height: 100vh;
+
+}
+
+
+.ms_card-layout {
+  @media screen and (max-width: 992px) {
+    column-count: 1;
+  }
+}

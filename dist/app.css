@@ -14,14 +14,26 @@
   }
 }
 
-.ms_progress {
+.ms_ciao {
+  background-color: aquamarine;
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
   position: absolute;
   z-index: 999;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   width: 50vw;
 }
-.ms_progress ::after {
-  content: "Work in progress...";
+
+.ms_chi-siamo {
+  height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+  .ms_card-layout {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
