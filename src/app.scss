@@ -1,3 +1,5 @@
+@import "../libraries/bootstrap-scss/bootstrap.scss";
+
 // start jumbotron
 .ms_jumbotron {
 
@@ -17,22 +19,22 @@
   }
 }
 
-.ms_ciao {
+// .ms_ciao {
 
-  background-color: aquamarine;
-  text-align: center;
-  line-height: 90px;
-  height: 90px;
+//   background-color: aquamarine;
+//   text-align: center;
+//   line-height: 90px;
+//   height: 90px;
 
 
 
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-}
+//   position: absolute;
+//   z-index: 999;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 50vw;
+// }
 // end jumbotron
 
 
@@ -44,7 +46,14 @@
 
 
 .ms_card-layout {
-  @media screen and (max-width: 992px) {
+
+  @include media-breakpoint-between(xs, md) {
     column-count: 1;
+  }
+  @include media-breakpoint-between(md, xl) {
+    column-count: 2;
+  }
+  @include media-breakpoint-up(xl) {
+    column-count: 3;
   }
 }
