@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10001,6 +10002,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
 .ms_jumbotron {
   min-height: 100vh;
   width: 100%;
@@ -10010,7 +10015,7 @@ h3 {
   height: 100vh;
   width: 100%;
 }
-@media screen and (max-width: 992px) {
+@media (max-width: 1199.98px) {
   .ms_img {
     min-width: 100%;
     width: initial;
@@ -10038,4 +10043,19 @@ h3 {
     -moz-column-count: 3;
          column-count: 3;
   }
+}
+
+.card img {
+  transition: all 0.2s ease-in-out;
+}
+.card:hover .card-text {
+  display: block;
+}
+.card:hover img {
+  transition: all 0.2s ease-in-out;
+  filter: brightness(15%) saturate(1234%);
+}
+
+.card-text {
+  display: none;
 }

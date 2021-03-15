@@ -1,4 +1,10 @@
 @import "../libraries/bootstrap-scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+body {
+
+  font-family: 'Fira Sans', sans-serif;
+}
 
 // start jumbotron
 .ms_jumbotron {
@@ -12,38 +18,18 @@
   height: 100vh;
   width: 100%;
 
-  @media screen and (max-width: 992px) {
+  @include media-breakpoint-down(lg) {
 
     min-width: 100%;
     width: initial;
   }
 }
 
-// .ms_ciao {
-
-//   background-color: aquamarine;
-//   text-align: center;
-//   line-height: 90px;
-//   height: 90px;
-
-
-
-//   position: absolute;
-//   z-index: 999;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 50vw;
-// }
-// end jumbotron
-
-
 .ms_chi-siamo {
 
   height: 100vh;
-
+  
 }
-
 
 .ms_card-layout {
 
@@ -56,4 +42,51 @@
   @include media-breakpoint-up(xl) {
     column-count: 3;
   }
+}
+
+.card {
+  img {
+  
+    transition: $transition-base;  
+  }
+
+  &:hover {
+    .card-text{
+
+      display: block;
+    } 
+    img {
+  
+      transition: $transition-base;
+      // filter: invert(74%) sepia(89%) saturate(1343%) hue-rotate(0deg) brightness(105%) contrast(103%);
+      filter: brightness(15%) saturate(1234%);
+    }
+  }
+  // &:active {
+  //   .card-text{
+  //     display: block;
+      
+  //   } 
+  //   img {
+  
+  //     transition: $transition-base;
+  //     filter: opacity(45%);
+  //   }
+  // }
+  // &:focus {
+  //   .card-text{
+  //     display: block;
+      
+  //   } 
+  //   img {
+  
+  //     transition: 0.50s ease-in-out;
+  //     filter: opacity(45%);
+  //   }
+  // }
+}
+
+.card-text {
+  
+  display: none;
 }
