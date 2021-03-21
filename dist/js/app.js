@@ -1,3 +1,11 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -7,9 +15,7 @@
   \********************/
 /***/ (() => {
 
-$(document).ready(function () {
-  console.log("developed by Can4glia");
-});
+eval("$(document).ready(function () {\n  // console.log( \"developed by Can4glia\" );\\\n  var nav = $('#ms_nav');\n  $('#ms_toggle').click(function () {\n    nav.toggle();\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hZnJpY2FhcG9ydGFwb3J0ZXNlLy4vc3JjL2FwcC5qcz8xMTEyIl0sIm5hbWVzIjpbIiQiLCJkb2N1bWVudCIsInJlYWR5IiwibmF2IiwiY2xpY2siLCJ0b2dnbGUiXSwibWFwcGluZ3MiOiJBQUFBQSxDQUFDLENBQUVDLFFBQUYsQ0FBRCxDQUFjQyxLQUFkLENBQW9CLFlBQVc7QUFDN0I7QUFFQSxNQUFJQyxHQUFHLEdBQUdILENBQUMsQ0FBQyxTQUFELENBQVg7QUFFQUEsRUFBQUEsQ0FBQyxDQUFDLFlBQUQsQ0FBRCxDQUFnQkksS0FBaEIsQ0FBc0IsWUFBVztBQUU3QkQsSUFBQUEsR0FBRyxDQUFDRSxNQUFKO0FBRUgsR0FKRDtBQU1ELENBWEQiLCJzb3VyY2VzQ29udGVudCI6WyIkKCBkb2N1bWVudCApLnJlYWR5KGZ1bmN0aW9uKCkge1xuICAvLyBjb25zb2xlLmxvZyggXCJkZXZlbG9wZWQgYnkgQ2FuNGdsaWFcIiApO1xcXG5cbiAgdmFyIG5hdiA9ICQoJyNtc19uYXYnKTtcblxuICAkKCcjbXNfdG9nZ2xlJykuY2xpY2soZnVuY3Rpb24oKSB7XG5cbiAgICAgIG5hdi50b2dnbGUoKTtcblxuICB9KTtcblxufSk7Il0sImZpbGUiOiIuL3NyYy9hcHAuanMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/app.js\n");
 
 /***/ }),
 
@@ -20,9 +26,7 @@ $(document).ready(function () {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hZnJpY2FhcG9ydGFwb3J0ZXNlLy4vc3JjL2FwcC5zY3NzPzU2ZGQiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBIiwiZmlsZSI6Ii4vc3JjL2FwcC5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/app.scss\n");
 
 /***/ })
 
@@ -82,7 +86,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/dist/app": 0
+/******/ 			"/dist/js/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [

@@ -10006,56 +10006,143 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-.ms_jumbotron {
-  min-height: 100vh;
+.ms_site-wrapper {
+  background-color: #c97655;
+}
+.ms_site-wrapper .ms_jumbotron, .ms_site-wrapper .ms_chi-siamo {
+  height: 100vh;
+}
+.ms_site-wrapper .ms_jumbotron img.ms_img, .ms_site-wrapper .ms_chi-siamo img.ms_img {
+  height: 100%;
   width: 100%;
 }
-
-.ms_img {
+.ms_site-wrapper header nav {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: #c97655;
   height: 100vh;
   width: 100%;
 }
-@media (max-width: 1199.98px) {
-  .ms_img {
-    min-width: 100%;
-    width: initial;
-  }
+.ms_site-wrapper header nav ul.ms_menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.ms_chi-siamo {
+.ms_site-wrapper header > div.ms_menu-icon {
+  position: fixed;
+  left: 25px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 3;
+  margin: 18px 0 18px 0;
+  padding: 16px 0 16px 0;
+  cursor: pointer;
+}
+.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon {
+  display: block;
+  background: #000;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:before,
+.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:after {
+  background: #000;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:before {
+  top: 5px;
+}
+.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:after {
+  top: -5px;
+}
+.ms_site-wrapper header .ms_jumbotron {
   height: 100vh;
 }
-
-@media (max-width: 991.98px) {
-  .ms_card-layout {
-    -moz-column-count: 1;
-         column-count: 1;
-  }
+.ms_site-wrapper header .ms_jumbotron #carousel {
+  height: 100%;
 }
+.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner {
+  height: 100%;
+}
+.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item img.ms_img {
+  height: 100%;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  .ms_card-layout {
+  .ms_site-wrapper header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ms_site-wrapper header > div#ms_toggle {
+    display: none;
+  }
+  .ms_site-wrapper header nav {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width: 25%;
+    left: 0;
+    height: 100%;
+    background-color: #ffc107;
+  }
+  .ms_site-wrapper header nav ul.ms_menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .ms_site-wrapper header .ms_jumbotron {
+    height: 100vh;
+    flex-basis: 75%;
+  }
+  .ms_site-wrapper header .ms_jumbotron #carousel {
+    height: 100%;
+  }
+  .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner {
+    height: 100%;
+  }
+  .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item {
+    height: 100%;
+  }
+  .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item img.ms_img {
+    height: 100%;
+    width: 100%;
+  }
+  .ms_site-wrapper main {
+    width: 75% !important;
+    margin-left: 25% !important;
+    max-width: none !important;
+  }
+  .ms_site-wrapper main .card-columns {
     -moz-column-count: 2;
          column-count: 2;
   }
 }
 @media (min-width: 1200px) {
-  .ms_card-layout {
+  .ms_site-wrapper main .card-columns {
     -moz-column-count: 3;
          column-count: 3;
   }
-}
-
-.card img {
-  transition: all 0.2s ease-in-out;
-}
-.card:hover .card-text {
-  display: block;
-}
-.card:hover img {
-  transition: all 0.2s ease-in-out;
-  filter: brightness(15%) saturate(1234%);
-}
-
-.card-text {
-  display: none;
 }

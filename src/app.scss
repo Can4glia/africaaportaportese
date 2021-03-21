@@ -1,92 +1,455 @@
-@import "../libraries/bootstrap-scss/bootstrap.scss";
+@import "../libraries/bootstrap-scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-
+@import "../libraries/custom/mixins";
 body {
 
   font-family: 'Fira Sans', sans-serif;
 }
 
-// start jumbotron
-.ms_jumbotron {
 
-  min-height: 100vh;
-  width: 100%;
-}
+.ms_site-wrapper {
 
-.ms_img {
+  background-color: #c97655;
 
-  height: 100vh;
-  width: 100%;
+  .ms_jumbotron, .ms_chi-siamo {
 
-  @include media-breakpoint-down(lg) {
+    height: 100vh;
 
-    min-width: 100%;
-    width: initial;
-  }
-}
-
-.ms_chi-siamo {
-
-  height: 100vh;
-  
-}
-
-.ms_card-layout {
-
-  @include media-breakpoint-between(xs, md) {
-    column-count: 1;
-  }
-  @include media-breakpoint-between(md, xl) {
-    column-count: 2;
-  }
-  @include media-breakpoint-up(xl) {
-    column-count: 3;
-  }
-}
-
-.card {
-  img {
-  
-    transition: $transition-base;  
-  }
-
-  &:hover {
-    .card-text{
-
-      display: block;
-    } 
-    img {
-  
-      transition: $transition-base;
-      // filter: invert(74%) sepia(89%) saturate(1343%) hue-rotate(0deg) brightness(105%) contrast(103%);
-      filter: brightness(15%) saturate(1234%);
+    img.ms_img {
+        
+      height: 100%;
+      width: 100%;
     }
   }
-  // &:active {
-  //   .card-text{
-  //     display: block;
+
+  header {
+    nav {
+
+      display: none;
+
+      position: fixed;
+      z-index: 2;
+      background-color: #c97655;
+      height: 100vh;
+      width: 100%;
+
+      ul.ms_menu {@include ms_ul;}
+    }
+
+    > div.ms_menu-icon {
+
       
-  //   } 
-  //   img {
+      position: fixed;
+      left: 25px;
+      user-select: none;
+      z-index: 3;
+      margin: 18px 0 18px 0;
+      padding: 16px 0 16px 0;
+      cursor: pointer;
+
+      > .ms_navicon {
   
-  //     transition: $transition-base;
-  //     filter: opacity(45%);
-  //   }
-  // }
-  // &:focus {
-  //   .card-text{
-  //     display: block;
+        display: block;
+
+        background: $black;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
+  
+      > .ms_navicon:before,
+      > .ms_navicon:after {
+  
+        // display: block;
+
+        background: $black;
+        content: '';
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+  
+      > .ms_navicon:before {
+  
+        top: 5px;
+      }
+  
+      > .ms_navicon:after {
+  
+        top: -5px;
+      }
+    }
+
+    .ms_jumbotron {
+  
+      height: 100vh;
+
+      #carousel {
+
+        height: 100%;
+
+        .carousel-inner {
+
+          height: 100%;
+
+          .carousel-item {
+
+            height: 100%;
+
+            img.ms_img {
       
-  //   } 
-  //   img {
-  
-  //     transition: 0.50s ease-in-out;
-  //     filter: opacity(45%);
-  //   }
-  // }
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
 }
 
-.card-text {
+
+
+
+// MEDIAQUERY //
+.ms_site-wrapper {
+
+  @include media-breakpoint-up(md) {
   
-  display: none;
+    header {
+  
+      display: flex;
+      justify-content: flex-end;
+  
+      > div#ms_toggle {
+  
+        display: none;
+      }
+  
+      nav {
+
+        display: block;
+
+  
+        // flex-basis: 25%;
+        position: fixed;
+        z-index: 1;
+        width: 25%;
+        left: 0;
+        height: 100%;
+        background-color: $yellow;
+
+        ul.ms_menu {@include ms_ul;}
+      }
+  
+      .ms_jumbotron {
+  
+        height: 100vh;
+        flex-basis: 75%;
+  
+        #carousel {
+          height: 100%;
+  
+          .carousel-inner {
+            height: 100%;
+  
+            .carousel-item {
+              height: 100%;
+  
+              img.ms_img {
+        
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    main {
+    
+      width: 75% !important;
+      margin-left: 25% !important;
+      max-width: none !important;
+
+      .card-columns {
+
+        column-count: 2;
+
+      }
+    }
+  };
+  @include media-breakpoint-up(xl) {
+    main {
+  
+      .card-columns {
+
+        column-count: 3;
+
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .ms_site-wrapper {
+
+//   .ms_jumbotron, main, footer {
+
+//     padding-left: 50px;  
+
+//     @include media-breakpoint-up(md) {
+
+//       padding-left: 25%;                           // sidebar
+//     }
+//   }
+
+//   // start jumbotron
+//   .ms_jumbotron {
+
+//     min-height: 100vh;
+//     width: 100%;
+    
+//     .ms_img {
+
+//       width: 100%;
+//       height: 100vh;
+//     }
+//   }
+  
+//   // header start 
+//   header {
+
+//     height: 100vh;
+//     width: 100%;
+//     background-color: aquamarine;
+
+//     nav {
+//       position: fixed;
+//       z-index: 1004;
+//       height: 100vh;
+//       width: 50px;
+//       @include media-breakpoint-up(md) {width: 25%;}
+//       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+//       background-color: $yellow;
+//       .ms_menu-icon,.ms_menu-btn {
+
+//         position: inherit;
+//         left: 25px;
+//         transform: translateX(-50%);
+
+
+//       }
+//       .ms_menu-icon {
+//         @include media-breakpoint-up(md) {display: none;}
+//         user-select: none;
+//       }
+
+//       .ms_menu-btn:checked ~ .ms_nav-wrapper {
+//         width: 50vw;
+//         transition: 0.5s;
+        
+  
+//       }
+
+
+//       .ms_nav-wrapper {
+//         position: relative;
+        
+
+//         display: flex;
+//         align-items: center;
+//         height: inherit;
+//         width: inherit;
+//         width: 200px;
+
+
+//         ul {
+//           list-style-type: none;
+//           padding: 0;
+//           margin: 0;
+//         }
+
+
+
+//       }
+//     }
+
+
+//     // menu
+
+
+//     /*** icon ***/
+//     .ms_menu-icon .ms_navicon {
+//         background: $black;
+//         display: block;
+//         height: 2px;
+//         position: relative;
+//         transition: background .2s ease-out;
+//         width: 18px;
+//     }
+//     .ms_menu-icon .ms_navicon:before,
+//     .ms_menu-icon .ms_navicon:after {
+//         background: $black;
+//         content: '';
+//         display: block;
+//         height: 100%;
+//         position: absolute;
+//         transition: all .2s ease-out;
+//         width: 100%;
+//     }
+//     .ms_menu-icon .ms_navicon:before {
+//         top: 5px;
+//     }
+//     .ms_menu-icon .ms_navicon:after {
+//         top: -5px;
+//     }
+//     .ms_menu-btn {display: none;}
+//     .ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon {
+//         background: transparent;
+//     }
+//     .ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:before {
+//         transform: rotate(-45deg);
+//     }
+//     .ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:after {
+//         transform: rotate(45deg);
+//     }
+//     .ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:before,
+//     .ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:after {
+//         top: 0;
+//     }
+//     .ms_menu-icon {
+//         margin: 18px 0 18px 0;
+//         padding: 16px 0 16px 0;
+//     }
+//   } /** header end **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   .ms_chi-siamo {
+
+//     height: 100vh;
+    
+//   }
+
+//   .ms_card-layout {
+
+//     @include media-breakpoint-between(xs, md) {
+//       column-count: 1;
+//     }
+//     @include media-breakpoint-between(md, xl) {
+//       column-count: 2;
+//     }
+//     @include media-breakpoint-up(xl) {
+//       column-count: 3;
+//     }
+//   }
+
+//   .card {
+//     img {
+    
+//       transition: $transition-base;  
+//     }
+
+//     &:hover {
+//       .card-text{
+
+//         display: block;
+//       } 
+//       img {
+    
+//         transition: $transition-base;
+//         // filter: invert(74%) sepia(89%) saturate(1343%) hue-rotate(0deg) brightness(105%) contrast(103%);
+//         filter: brightness(15%) saturate(1234%);
+//       }
+//     }
+//     // &:active {
+//     //   .card-text{
+//     //     display: block;
+        
+//     //   } 
+//     //   img {
+    
+//     //     transition: $transition-base;
+//     //     filter: opacity(45%);
+//     //   }
+//     // }
+//     // &:focus {
+//     //   .card-text{
+//     //     display: block;
+        
+//     //   } 
+//     //   img {
+    
+//     //     transition: 0.50s ease-in-out;
+//     //     filter: opacity(45%);
+//     //   }
+//     // }
+//   }
+
+//   .card-text {
+    
+//     display: none;
+//   }
+// }
