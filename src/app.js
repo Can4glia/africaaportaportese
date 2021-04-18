@@ -1,11 +1,18 @@
 $( document ).ready(function() {
-  // console.log( "developed by Can4glia" );\
+  // console.log( "developed by Can4glia" );
 
-  var nav = $('#ms_nav');
+  var checkBox = $('#ms_menu-btn');
 
   $('#ms_toggle').click(function() {
 
-      nav.toggle();
+    if ( $(this).siblings(checkBox).prop('checked') == false ) {
+
+      $(this).siblings(checkBox).prop('checked', true);
+      
+    } else {
+
+      $(this).siblings(checkBox).prop('checked', false);
+    }
 
   });
 

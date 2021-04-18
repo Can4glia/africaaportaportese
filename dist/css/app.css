@@ -10016,15 +10016,38 @@ body {
   height: 100%;
   width: 100%;
 }
-.ms_site-wrapper header nav {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  background-color: #c97655;
-  height: 100vh;
-  width: 100%;
+.ms_site-wrapper header {
+  /*** menu button (input) ***/
 }
-.ms_site-wrapper header nav ul.ms_menu {
+.ms_site-wrapper header #ms_toggle {
+  padding-right: 18px;
+}
+.ms_site-wrapper header #ms_menu-btn {
+  display: none;
+}
+.ms_site-wrapper header #ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon {
+  background: transparent;
+}
+.ms_site-wrapper header #ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:before {
+  transform: rotate(-45deg);
+}
+.ms_site-wrapper header #ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:after {
+  transform: rotate(45deg);
+}
+.ms_site-wrapper header #ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:before,
+.ms_site-wrapper header #ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon:after {
+  top: 0;
+}
+.ms_site-wrapper header .ms_menu-icon {
+  margin: 18px 0 18px 0;
+  padding: 16px 0 16px 0;
+}
+.ms_site-wrapper header #ms_menu-btn:checked ~ nav {
+  width: 100%;
+  transition: 1.5s;
+}
+.ms_site-wrapper header #ms_menu-btn:checked ~ nav ul.ms_menu {
+  display: block;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -10034,28 +10057,40 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.ms_site-wrapper header > div.ms_menu-icon {
+.ms_site-wrapper header nav {
+  width: 0;
+  transition: 1.5s;
+  position: fixed;
+  z-index: 2;
+  background-color: #c97655;
+  height: 100vh;
+}
+.ms_site-wrapper header nav ul.ms_menu {
+  display: none;
+}
+.ms_site-wrapper header > label.ms_menu-icon {
   position: fixed;
   left: 25px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  z-index: 3;
+  z-index: 9;
   margin: 18px 0 18px 0;
   padding: 16px 0 16px 0;
   cursor: pointer;
 }
-.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon {
+.ms_site-wrapper header > label.ms_menu-icon > .ms_navicon {
+  position: absolute;
   display: block;
   background: #000;
+  content: "";
   height: 2px;
-  position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
 }
-.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:before,
-.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:after {
+.ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:before,
+.ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:after {
   background: #000;
   content: "";
   height: 100%;
@@ -10063,10 +10098,10 @@ body {
   transition: all 0.2s ease-out;
   width: 100%;
 }
-.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:before {
+.ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:before {
   top: 5px;
 }
-.ms_site-wrapper header > div.ms_menu-icon > .ms_navicon:after {
+.ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:after {
   top: -5px;
 }
 .ms_site-wrapper header .ms_jumbotron {
@@ -10160,7 +10195,6 @@ body {
   -webkit-transform-style: preserve-3d;
   -ms-transition: 1s;
   -moz-transition: 1s;
-  -moz-transform: perspective(1000px);
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transition: 1s;
@@ -10169,8 +10203,6 @@ body {
 }
 .ms_site-wrapper .frontside {
   position: relative;
-  -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
   z-index: 2;
   margin-bottom: 30px;
 }
@@ -10197,6 +10229,10 @@ body {
   transition: 1s;
   transform-style: preserve-3d;
 }
+.ms_site-wrapper .frontside .card,
+.ms_site-wrapper .backside .card {
+  min-height: 512px;
+}
 .ms_site-wrapper .backside .card a {
   font-size: 18px;
   color: #007b5e !important;
@@ -10205,12 +10241,13 @@ body {
 .ms_site-wrapper .backside .card .card-title {
   color: #007b5e !important;
 }
+
 @media (min-width: 768px) {
   .ms_site-wrapper header {
     display: flex;
     justify-content: flex-end;
   }
-  .ms_site-wrapper header > div#ms_toggle {
+  .ms_site-wrapper header > #ms_toggle {
     display: none;
   }
   .ms_site-wrapper header nav {
