@@ -4,25 +4,44 @@
 body {
 
   font-family: 'Fira Sans', sans-serif;
+  color: #4d1313;
+  font-weight: bolder;
 }
 
 
 .ms_site-wrapper {
 
-  background-color: #c97655;
+  background-image: linear-gradient(
+    to bottom, 
+    #cf9179, #cf8f75, 
+    #cf8c72, #ce8a6e, 
+    #ce876b, #ce8669, 
+    #ce8568, #ce8466, 
+    #ce8466, #ce8466, 
+    #ce8466, #ce8466
+  );
 
   .ms_jumbotron, .ms_chi-siamo {
 
     height: 100vh;
-
     img.ms_img {
-        
+      
       height: 100%;
       width: 100%;
     }
+    
   }
-
   header {
+
+    // .ms_title {
+    //   position: absolute;
+    //   z-index: 1011;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   color: #4d1313;
+    //   background-color: rgba(50, 205, 205, 0.699);
+
+    // }
     
 
 
@@ -75,6 +94,12 @@ body {
 
       ul.ms_menu {
         display: none;
+      }
+
+      a {
+        color: #4d1313;
+        font-weight: 600;
+        font-size: 20px;
       }
     }
 
@@ -165,27 +190,50 @@ body {
       }
 
       .card {
-        min-height: 150px; // ???
+        border: 3px solid rgb(249, 189, 169);
       }
 
       .card-img-overlay {
 
         display: none;
 
-        p {
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
-          overflow-block: auto;
+        .ms_info {
 
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
 
-          ::-webkit-scrollbar {
-            display: none;
+
+          font-size: 2rem;
+
+          ul {
+            padding-left: 0;
+
+            li {
+              width: min-content;
+              margin: auto;
+            }
           }
+
+
         }
+
+        // span {
+
+        //   overflow: hidden;
+        //   display: -webkit-box;
+        //   -webkit-line-clamp: 5;
+        //   -webkit-box-orient: vertical;
+        //   overflow-block: auto;
+
+        //   -ms-overflow-style: none;  /* IE and Edge */
+        //   scrollbar-width: none;  /* Firefox */
+
+        //   ::-webkit-scrollbar {
+        //     display: none;
+        //   }
+        // }
       }
 
       .card:hover,
@@ -193,136 +241,42 @@ body {
 
         .card-img-overlay {
 
+          border-radius: unset;
           display: block;
+
+          // background-color: rgba(0, 0, 0, 0.333);
+          background-color: rgba(249, 189, 169, 0.809);
+          font-weight: 600;
+
+          color: #4d1313;
         }
       }
     }
   }
 
-  #team {
-      background: #eee !important;
+  footer {
+
+    .ms_map {
+
+      background-color: #ffda964b;
+      padding: 10%;
+
+      img {
+
+        border-radius: 50%;
+      }
+
+      .ms_address {
+        padding: 2rem;
+
+      }
+    }
+
+    // .ms_contacts {
+    //   height: 100vh;
+    // }
   }
 
-  .btn-primary:hover,
-  .btn-primary:focus {
-      background-color: #108d6f;
-      border-color: #108d6f;
-      box-shadow: none;
-      outline: none;
-  }
-
-  .btn-primary {
-      color: #fff;
-      background-color: #007b5e;
-      border-color: #007b5e;
-  }
-
-  section {
-      padding: 60px 0;
-  }
-
-  section .section-title {
-      text-align: center;
-      color: #007b5e;
-      margin-bottom: 50px;
-      text-transform: uppercase;
-  }
-
-  #team .card {
-      border: none;
-      background: #ffffff;
-  }
-
-  .image-flip:hover .backside,
-  .image-flip.hover .backside {
-      -webkit-transform: rotateY(0deg);
-      -moz-transform: rotateY(0deg);
-      -o-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-      border-radius: .25rem;
-  }
-
-  .image-flip:hover .frontside,
-  .image-flip.hover .frontside {
-      -webkit-transform: rotateY(180deg);
-      -moz-transform: rotateY(180deg);
-      -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-  }
-
-  .mainflip {
-      -webkit-transition: 1s;
-      -webkit-transform-style: preserve-3d;
-      -ms-transition: 1s;
-      -moz-transition: 1s;
-      // -moz-transform: perspective(1000px);
-      -moz-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-      transition: 1s;
-      transform-style: preserve-3d;
-      position: relative;
-  }
-
-  .frontside {
-      position: relative;
-      // -webkit-transform: rotateY(0deg);
-      // -ms-transform: rotateY(0deg);
-      z-index: 2;
-      margin-bottom: 30px;
-  }
-
-  .backside {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: white;
-      -webkit-transform: rotateY(-180deg);
-      -moz-transform: rotateY(-180deg);
-      -o-transform: rotateY(-180deg);
-      -ms-transform: rotateY(-180deg);
-      transform: rotateY(-180deg);
-      -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-      -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-      box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-  }
-
-  .frontside,
-  .backside {
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -webkit-transition: 1s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transition: 1s;
-      -moz-transform-style: preserve-3d;
-      -o-transition: 1s;
-      -o-transform-style: preserve-3d;
-      -ms-transition: 1s;
-      -ms-transform-style: preserve-3d;
-      transition: 1s;
-      transform-style: preserve-3d;
-  }
-
-  .frontside .card,
-  .backside .card {
-      min-height: 512px;
-  }
-
-  .backside .card a {
-      font-size: 18px;
-      color: #007b5e !important;
-  }
-
-  .frontside .card .card-title,
-  .backside .card .card-title {
-      color: #007b5e !important;
-  }
-
-  // .frontside .card .card-body img {
-
-  // }
 
 
 }
@@ -344,6 +298,11 @@ body {
   
         display: none;
       }
+
+      #ms_menu-btn:checked ~ nav {
+
+        width: 25%;
+      }
   
       nav {
 
@@ -353,7 +312,7 @@ body {
         width: 25%;
         left: 0;
         height: 100%;
-        background-color: $yellow;
+        background-color: #f3c143b0;
 
         ul.ms_menu {@include ms_ul;}
       }
@@ -383,7 +342,8 @@ body {
       }
     }
   
-    main {
+    main,
+    footer {
     
       width: 75% !important;
       margin-left: 25% !important;

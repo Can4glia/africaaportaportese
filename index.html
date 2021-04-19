@@ -12,7 +12,11 @@
 
   <div class="container-fluid p-0 ms_site-wrapper">
 
-    <header>
+    <header id='home'>
+
+      <!-- <div class="ms_title">
+        <h1>Africa a Porta Portese</h1>
+      </div> -->
 
       <input id="ms_menu-btn" type="checkbox" checked="false"/>
       <label id="ms_toggle" class="ms_menu-icon"><span class="ms_navicon"></span></label>
@@ -20,8 +24,11 @@
       <nav id="ms_nav">
 
           <ul class="ms_menu">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#description">Chi siamo</a></li>            
+            <li><a href="#products">I nostri tessuti</a></li>
+            <li><a href="#map">Dove trovarci</a></li>            
+            <li><a href="#contacts">Contattaci</a></li>
           </ul>
 
       </nav>
@@ -33,13 +40,13 @@
         <div id="carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="ms_img d-block" src="images/DSC_0112.jpg" alt="First slide">
+              <img class="ms_img d-block" src="images/bg-1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="ms_img d-block" src="images/DSC_0169.jpg" alt="Second slide">
+              <img class="ms_img d-block" src="images/bg-2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="ms_img d-block" src="images/DSC_0112.jpg" alt="Second slide">
+              <img class="ms_img d-block" src="images/bg-3.jpg" alt="Second slide">
             </div>
           </div>
         </div>
@@ -49,15 +56,16 @@
     </header>
 
     <main class="container">
-      <div class="row m-0 ms_chi-siamo">
+      <div id='description' class="row mb-5 pl-5 pr-5 ms_chi-siamo">
         <div class="col align-self-center pr-5 pl-5">
           
           <p class="text-center">
-            Lasciati ispirare dai disegni e dalle fantasie disponibili!
             Siamo a Porta Portese da più di vent’anni con un’attività 
             a gestione familiare per farvi conoscere ed apprezzare gli 
             originali tessuti artigianali  africani, Mali 🇲🇱 Burkina Faso 🇧🇫 e Algeria 🇩🇿 che
-            si uniscono unicamente da noi per potervi offrire la bellezza dell’Africa sub-sahariana
+            si uniscono unicamente da noi per potervi offrire la bellezza dell’Africa sub-sahariana.
+            <br/>
+            Lasciati ispirare dai disegni e dalle fantasie disponibili!
           </p>
           
         </div>
@@ -65,7 +73,7 @@
       
       <div class="row m-0 ">
         
-        <div class="col-12 p-0">
+        <div id='products' class="col-12 p-0">
           
           <h2>I nostri tessuti: Bogolan - tra tradizione e modernità</h2>
           
@@ -77,162 +85,344 @@
         </div>
         
       </div>
-
-
-      <ul class="card-columns">
-        <li class="image-flip" ontouchstart="this.classList.toggle('hover');">
-          <div class="mainflip">
-            <div class="frontside">
-              <div class="card">
-                <img src="images/DSC_0218.jpg" class="card-img" alt="...">
-      
-              </div>
-            </div>
-            <div class="backside">
-              <div class="card">
-                <div class="card-body text-center mt-4">
-                  <h4 class="card-title">Lorem</h4>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste repellat minima
-                    asperiores adipisci, voluptatum excepturi aut aspernatur omnis. Fuga dignissimos eligendi facilis, aperiam
-                    molestias impedit illum sed magnam exercitationem quisquam? This is a wider card with supporting text
-                    below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      
-                </div>
-              </div>
-            </div>
-          </div>
-        </li><li class="image-flip" ontouchstart="this.classList.toggle('hover');">
-          <div class="mainflip">
-            <div class="frontside">
-              <div class="card">
-                <img src="images/DSC_0237.jpg" class="card-img" alt="...">
-      
-              </div>
-            </div>
-            <div class="backside">
-              <div class="card">
-                <div class="card-body text-center mt-4">
-                  <h4 class="card-title">Lorem</h4>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste repellat minima
-                    asperiores adipisci, voluptatum excepturi aut aspernatur omnis. Fuga dignissimos eligendi facilis, aperiam
-                    molestias impedit illum sed magnam exercitationem quisquam? This is a wider card with supporting text
-                    below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      
-                </div>
-              </div>
-            </div>
-          </div>
-        </li><li class="image-flip" ontouchstart="this.classList.toggle('hover');">
-          <div class="mainflip">
-            <div class="frontside">
-              <div class="card">
-                <img src="images/DSC_0122.jpg" class="card-img" alt="...">
-      
-              </div>
-            </div>
-            <div class="backside">
-              <div class="card">
-                <div class="card-body text-center mt-4">
-                  <h4 class="card-title">Lorem</h4>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste repellat minima
-                    asperiores adipisci, voluptatum excepturi aut aspernatur omnis. Fuga dignissimos eligendi facilis, aperiam
-                    molestias impedit illum sed magnam exercitationem quisquam? This is a wider card with supporting text
-                    below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-
-      </ul>
-
-
   
+      <ul class="card-columns">
+
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0052.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0073.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0075.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0077.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0081.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0157.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0162.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0125.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0113.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0092.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0083.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+                
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+                
+              </div>
+              
+            </div>
+          </div>
+        </li>
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0190.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>                 
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0086.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
+
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
+
+              </div>
+  
+            </div>
+          </div>
+        </li>
         
-      <!-- <ul class="card-columns">
+        <li class="card bg-dark text-white">
+          <img src="images/DSC_0188.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="ms_info">
+              
+              <div>
 
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
 
-        <li class="card bg-dark text-white">
-          <img src="images/DSC_0218.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
+              </div>
+  
+            </div>
           </div>
         </li>
         <li class="card bg-dark text-white">
-          <img src="images/DSC_0237.jpg" class="card-img" alt="...">
+          <img src="images/DSC_0197.jpg" class="card-img" alt="...">
           <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste repellat minima asperiores adipisci, voluptatum excepturi aut aspernatur omnis. Fuga dignissimos eligendi facilis, aperiam molestias impedit illum sed magnam exercitationem quisquam? This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/DSC_0169.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/DSC_0122.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/bg-1.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/bg-2.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur possimus fugit repudiandae modi voluptatem consectetur ipsum laudantium, sunt vel provident, aperiam hic? Temporibus, natus sunt molestiae eos sit corrupti repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, beatae necessitatibus. Explicabo, modi libero perferendis nostrum earum est officiis aut eaque dignissimos natus. Voluptates dicta doloribus cumque modi sequi. Dolorem? This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/bg-3.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste repellat minima asperiores adipisci, voluptatum excepturi aut aspernatur omnis. Fuga dignissimos eligendi facilis, aperiam molestias impedit illum sed magnam exercitationem quisquam? This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/bg-2.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur possimus fugit repudiandae modi voluptatem consectetur ipsum laudantium, sunt vel provident, aperiam hic? Temporibus, natus sunt molestiae eos sit corrupti repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, beatae necessitatibus. Explicabo, modi libero perferendis nostrum earum est officiis aut eaque dignissimos natus. Voluptates dicta doloribus cumque modi sequi. Dolorem? This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
-        <li class="card bg-dark text-white">
-          <img src="images/bg-3.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Misure</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste repellat minima asperiores adipisci, voluptatum excepturi aut aspernatur omnis. Fuga dignissimos eligendi facilis, aperiam molestias impedit illum sed magnam exercitationem quisquam? This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-          </div>
-        </li>
+            <div class="ms_info">
+              
+              <div>
 
+                <h6>Misure disponibili:</h6>
+                <ul>
+                  <li>
+                    -
+                  </li>
+                </ul>
 
-
-
+              </div>
+  
+            </div>
+          </div>
+        </li>
       </ul>
-   -->
+  
     </main>
+
+
+    <footer class="container">
+
+      <h3 id='map' class="mt-5 pt-5">Siamo qui!</h3>
+      <div class="row m-0 ms_map">
+
+        <div class="col-sm-12 col-md-6 p-0 align-self-center">
+
+            <img class="img-fluid" src="images/piazza-ippolito-nievo.jpg" alt="mappetta"/>
+        
+        </div>
+
+        <div class="col-sm-12 col-md-6 p-0 align-self-center">
+
+          <div class="ms_address text-center">
+
+            <p>Mercato domenicale di Porta Portese</p>
+            
+            <p>Piazza Ippolito Nievo</p>
+
+          </div>     
+        
+        </div>
+      
+      
+      </div>
+      <div class="row m-0">
+
+        <h5 id='contacts' class="pt-5 m-auto">Contatti: </h5>
+        
+        <div class="col-12 p-0 text-center mb-5">
+
+          <div class="ms_contacts">
+            
+            telefono: 3392779720 / 3928246957 <br/>
+            email: africaaportaportese@gmail.com <br/>
+            punto di ritiro feriale: Via in Publicolis, 48 - c/o Bova Conti Gioielli <br/>
+            pagina facebook: <a href="https://m.facebook.com/Africa-A-Porta-Portese-146153522727477/">africaaportaportese</a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </footer>
   </div>
   
   <script src="libraries/jquery.slim.min.js"></script>
