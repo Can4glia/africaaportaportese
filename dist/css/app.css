@@ -10122,9 +10122,17 @@ body {
 }
 .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item {
   height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item img.ms_img {
-  height: 100%;
+.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item.slide-1 {
+  background-image: url(/images/bg-1.jpg?0d38dc1bb1f5578995969fb82ccba553);
+}
+.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item.slide-2 {
+  background-image: url(/images/bg-2.jpg?abb8871c0784088cc17a64e81bf0cb5f);
+}
+.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item.slide-3 {
+  background-image: url(/images/bg-3.jpg?b08b58df89f35a7e8c626ab18929f83e);
 }
 .ms_site-wrapper main .card-columns {
   -moz-column-count: 1;
@@ -10219,10 +10227,6 @@ body {
   }
   .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item {
     height: 100%;
-  }
-  .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item img.ms_img {
-    height: 100%;
-    width: 100%;
   }
   .ms_site-wrapper main,
 .ms_site-wrapper footer {

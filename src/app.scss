@@ -155,12 +155,12 @@ body {
           .carousel-item {
 
             height: 100%;
-
-            img.ms_img {
-      
-              height: 100%;
-              // width: 100%; //
-            }
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            &.slide-1 {background-image: url(../images/bg-1.jpg);}
+            &.slide-2 {background-image: url(../images/bg-2.jpg);}
+            &.slide-3 {background-image: url(../images/bg-3.jpg);}
           }
         }
       }
@@ -326,12 +326,6 @@ body {
   
             .carousel-item {
               height: 100%;
-  
-              img.ms_img {
-        
-                height: 100%;
-                width: 100%;
-              }
             }
           }
         }
