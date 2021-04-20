@@ -27,7 +27,7 @@ body {
     img.ms_img {
       
       height: 100%;
-      width: 100%;
+      // width: 100%;
     }
     
   }
@@ -43,14 +43,7 @@ body {
 
     // }
     
-
-
     /*** menu button (input) ***/
-
-    #ms_toggle {
-      padding-right: 18px;
-    }
-    
     #ms_menu-btn {display: none;}
     #ms_menu-btn:checked ~ .ms_menu-icon .ms_navicon {
         background: transparent;
@@ -69,34 +62,35 @@ body {
         margin: 18px 0 18px 0;
         padding: 16px 0 16px 0;
     }
-
-
     #ms_menu-btn:checked ~ nav {
-
-      width: 100%;
-      transition: 1.5s;
+        width: 100%;
+        transition: 0.4s ease-out;
       ul.ms_menu {
-        display: block;
-        @include ms_ul;
+          opacity: 1;
+          transition: 1.2s ease-in;
+          @include ms_ul;
       }
     }
-
+    #ms_toggle {
+        padding-right: 18px; // makes icon whole clickable
+    }
+    
     nav {
 
-      
       width: 0;
-      transition: 1.5s;
-      
+      transition: 0.8s ease-out;
       position: fixed;
       z-index: 2;
       background-color: #c97655;
       height: 100vh;
 
       ul.ms_menu {
-        display: none;
+
+        opacity: 0;
       }
 
       a {
+
         color: #4d1313;
         font-weight: 600;
         font-size: 20px;
@@ -106,7 +100,7 @@ body {
     > label.ms_menu-icon {
       
       position: fixed;
-      left: 25px;
+      right: 25px;
       user-select: none;
       z-index: 9;
       margin: 18px 0 18px 0;
@@ -117,7 +111,6 @@ body {
   
         position: absolute;
         display: block;
-
         background: $black;
         content: '';
         height: 2px;
@@ -166,7 +159,7 @@ body {
             img.ms_img {
       
               height: 100%;
-              width: 100%;
+              // width: 100%;
             }
           }
         }
@@ -314,7 +307,10 @@ body {
         height: 100%;
         background-color: #f3c143b0;
 
-        ul.ms_menu {@include ms_ul;}
+        ul.ms_menu {
+          opacity: 1;
+          @include ms_ul;
+        }
       }
   
       .ms_jumbotron {

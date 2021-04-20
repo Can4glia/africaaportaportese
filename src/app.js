@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-  // console.log( "developed by Can4glia" );
 
+  // burger menu
   var checkBox = $('#ms_menu-btn');
   checkBox.prop('checked', false);
 
