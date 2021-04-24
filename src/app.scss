@@ -43,6 +43,19 @@ body {
     
   }
   header {
+
+    .ms_box-icon {
+
+      width: 72px;
+      position: fixed;
+      z-index: 2;
+      right: 5px;
+      top: 13px;
+
+      .ms_africa-icon {
+        width: 100%;
+      }
+    }
     
     /*** menu button (input) ***/
     #ms_menu-btn {display: none;}
@@ -110,7 +123,7 @@ body {
 
       > .ms_navicon {
   
-        background-color: #f3c143;
+        background-color: #4d1313;
         position: absolute;
         display: block;
         content: '';
@@ -122,7 +135,7 @@ body {
       > .ms_navicon:before,
       > .ms_navicon:after {
   
-        background-color: #f3c143;
+        background-color: #4d1313;
         content: '';
         height: 100%;
         position: absolute;
@@ -302,6 +315,16 @@ body {
   
       display: flex;
       justify-content: flex-end;
+
+      .ms_box-icon {
+
+        position: absolute;
+        top: 5px;
+  
+        .ms_africa-icon {
+          width: 100%;
+        }
+      }
   
       > #ms_toggle {
   

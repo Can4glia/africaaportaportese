@@ -10028,6 +10028,16 @@ body {
 .ms_site-wrapper header {
   /*** menu button (input) ***/
 }
+.ms_site-wrapper header .ms_box-icon {
+  width: 72px;
+  position: fixed;
+  z-index: 2;
+  right: 5px;
+  top: 13px;
+}
+.ms_site-wrapper header .ms_box-icon .ms_africa-icon {
+  width: 100%;
+}
 .ms_site-wrapper header #ms_menu-btn {
   display: none;
 }
@@ -10096,7 +10106,7 @@ body {
   cursor: pointer;
 }
 .ms_site-wrapper header > label.ms_menu-icon > .ms_navicon {
-  background-color: #f3c143;
+  background-color: #4d1313;
   position: absolute;
   display: block;
   content: "";
@@ -10106,7 +10116,7 @@ body {
 }
 .ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:before,
 .ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:after {
-  background-color: #f3c143;
+  background-color: #4d1313;
   content: "";
   height: 100%;
   position: absolute;
@@ -10158,34 +10168,34 @@ body {
   background-image: url(/images/bg-3.jpg?b27ef924d28000a75586daac8d88165c);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-4 {
-  background-image: url(/images/bg-4.jpg?38a5bdda6bc49347704110e758d74f50);
+  background-image: url(/images/bg-4.jpg?3e7cd39819ac81a0113e858b6ac1f13d);
   background-position: center;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-5 {
-  background-image: url(/images/bg-5.jpg?a6dfe39affcf67f0cd8143b55897f67e);
+  background-image: url(/images/bg-5.jpg?285f0d32c79f606e0be74d777eec8547);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-6 {
-  background-image: url(/images/bg-6.jpg?6e43b0304e2c71169784dea3b94297a2);
+  background-image: url(/images/bg-6.jpg?e64bceb7e5b22f25f7af7d886515b38d);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-7 {
-  background-image: url(/images/bg-7.jpg?0a2d6939138d52153134232a977a09fd);
+  background-image: url(/images/bg-7.jpg?b0a912dbc45d4ff4444f05247b8a58a0);
   background-position: center;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-8 {
-  background-image: url(/images/bg-8.jpg?6ea1125d94ae8e25e07b94d0e9192fc1);
+  background-image: url(/images/bg-8.jpg?197b17c6ba89aecd6674c0251ca7e03d);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-9 {
-  background-image: url(/images/bg-9.jpg?76b96cc69747e8c6aac55cb5f7b81806);
+  background-image: url(/images/bg-9.jpg?1836d64796d2b9ea1ae3351cf9c4d370);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-10 {
-  background-image: url(/images/bg-10.jpg?b190b1b750961cde05720945ec48c75d);
+  background-image: url(/images/bg-10.jpg?5e3697b04f63140af710c532f5546b98);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-11 {
-  background-image: url(/images/bg-11.jpg?e7ced5d084ad014db205df1ef15acb38);
+  background-image: url(/images/bg-11.jpg?784df92797549aa67c21d65d8d5a001f);
   background-position: center;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-12 {
-  background-image: url(/images/bg-12.jpg?8e32c27d5792f452eddad5a4d0c39bef);
+  background-image: url(/images/bg-12.jpg?13c42810606175cb64e6dfa7c21feb4a);
   background-position: right;
 }
 .ms_site-wrapper main .card-columns {
@@ -10246,6 +10256,13 @@ body {
   .ms_site-wrapper header {
     display: flex;
     justify-content: flex-end;
+  }
+  .ms_site-wrapper header .ms_box-icon {
+    position: absolute;
+    top: 5px;
+  }
+  .ms_site-wrapper header .ms_box-icon .ms_africa-icon {
+    width: 100%;
   }
   .ms_site-wrapper header > #ms_toggle {
     display: none;
