@@ -1,5 +1,6 @@
 @import "../libraries/bootstrap-scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
 @import "../libraries/custom/mixins";
 body {
 
@@ -11,6 +12,15 @@ body {
 
 .ms_site-wrapper {
 
+  .toTopBtn {
+
+    position: fixed;
+    z-index: 1;
+    top: 95vh;
+    right: 25px;
+    color: #f3c143;
+  }
+
   background-image: linear-gradient(
     to bottom, 
     #cf9179, #cf8f75, 
@@ -18,12 +28,13 @@ body {
     #ce876b, #ce8669, 
     #ce8568, #ce8466, 
     #ce8466, #ce8466, 
-    #ce8466, #ce8466
+    #ce8466, #cc7b5b
   );
 
   .ms_jumbotron, .ms_chi-siamo {
 
     height: 100vh;
+
     img.ms_img {
       
       height: 100%;
@@ -32,16 +43,6 @@ body {
     
   }
   header {
-
-    // .ms_title {
-    //   position: absolute;
-    //   z-index: 1011;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   color: #4d1313;
-    //   background-color: rgba(50, 205, 205, 0.699);
-
-    // }
     
     /*** menu button (input) ***/
     #ms_menu-btn {display: none;}
@@ -109,9 +110,9 @@ body {
 
       > .ms_navicon {
   
+        background-color: #f3c143;
         position: absolute;
         display: block;
-        background: $black;
         content: '';
         height: 2px;
         transition: background .2s ease-out;
@@ -121,7 +122,7 @@ body {
       > .ms_navicon:before,
       > .ms_navicon:after {
   
-        background: $black;
+        background-color: #f3c143;
         content: '';
         height: 100%;
         position: absolute;
@@ -144,9 +145,29 @@ body {
   
       height: 100vh;
 
-      #carousel {
-
+      .carousel {
+        
+        position: relative;
         height: 100%;
+
+        .ms_title {
+
+          z-index: 1;
+          font-family: 'Dosis', sans-serif;
+          font-size: 80px;
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+          text-align: center;
+
+          span {
+
+            font-size: 160px;
+          }
+        }
+
 
         .carousel-inner {
 
@@ -161,17 +182,24 @@ body {
             &.slide-1 {background-image: url(../images/bg-1.jpg);}
             &.slide-2 {background-image: url(../images/bg-2.jpg);}
             &.slide-3 {background-image: url(../images/bg-3.jpg);}
+            &.slide-4 {background-image: url(../images/bg-4.jpg); background-position: center;}
+            &.slide-5 {background-image: url(../images/bg-5.jpg);}
+            &.slide-6 {background-image: url(../images/bg-6.jpg);}
+            &.slide-7 {background-image: url(../images/bg-7.jpg); background-position: center;}
+            &.slide-8 {background-image: url(../images/bg-8.jpg);}
+            &.slide-9 {background-image: url(../images/bg-9.jpg);}
+            &.slide-10 {background-image: url(../images/bg-10.jpg);}
+            &.slide-11 {background-image: url(../images/bg-11.jpg); background-position: center;}
+            &.slide-12 {background-image: url(../images/bg-12.jpg); background-position: right;}
+            
           }
         }
       }
     }
-
   }
 
   main {
 
-    // padding-bottom: 100%;
-  
     .card-columns {
 
       column-count: 1;
@@ -179,10 +207,12 @@ body {
       margin: 0;
 
       li {
+
         list-style-type: none;
       }
 
       .card {
+
         border: 3px solid rgb(249, 189, 169);
       }
 
@@ -196,33 +226,28 @@ body {
           justify-content: center;
           align-items: center;
           height: 100%;
-
-
           font-size: 2rem;
 
           ul {
+
             padding-left: 0;
 
             li {
+
               width: min-content;
               margin: auto;
             }
           }
-
-
         }
 
         // span {
-
         //   overflow: hidden;
         //   display: -webkit-box;
         //   -webkit-line-clamp: 5;
         //   -webkit-box-orient: vertical;
         //   overflow-block: auto;
-
         //   -ms-overflow-style: none;  /* IE and Edge */
         //   scrollbar-width: none;  /* Firefox */
-
         //   ::-webkit-scrollbar {
         //     display: none;
         //   }
@@ -231,16 +256,12 @@ body {
 
       .card:hover,
       .card:active {
-
         .card-img-overlay {
 
           border-radius: unset;
           display: block;
-
-          // background-color: rgba(0, 0, 0, 0.333);
           background-color: rgba(249, 189, 169, 0.809);
           font-weight: 600;
-
           color: #4d1313;
         }
       }
@@ -248,7 +269,6 @@ body {
   }
 
   footer {
-
     .ms_map {
 
       background-color: #ffda964b;
@@ -260,19 +280,18 @@ body {
       }
 
       .ms_address {
-        padding: 2rem;
 
+        padding: 2rem;
+        font-size: 23px;
       }
     }
 
     .ms_contacts a {
+
       color: #f3c143b0;
     }
   }
 }
-
-
-
 
 // MEDIAQUERY //
 .ms_site-wrapper {
@@ -316,22 +335,33 @@ body {
         flex-basis: 75%;
   
         #carousel {
+
           height: 100%;
   
           .carousel-inner {
+
             height: 100%;
   
             .carousel-item {
+
               height: 100%;
             }
           }
         }
       }
     }
+
+    main {
+      p:first-child {
+
+        line-height: 40px;
+        font-size: 20px;
+      }
+    }
   
     main,
     footer {
-    
+
       width: 75% !important;
       margin-left: 25% !important;
       max-width: none !important;
@@ -339,17 +369,14 @@ body {
       .card-columns {
 
         column-count: 2;
-
       }
     }
   };
   @include media-breakpoint-up(xl) {
     main {
-  
       .card-columns {
 
         column-count: 3;
-
       }
     }
   }

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10009,7 +10010,14 @@ body {
 }
 
 .ms_site-wrapper {
-  background-image: linear-gradient(to bottom, #cf9179, #cf8f75, #cf8c72, #ce8a6e, #ce876b, #ce8669, #ce8568, #ce8466, #ce8466, #ce8466, #ce8466, #ce8466);
+  background-image: linear-gradient(to bottom, #cf9179, #cf8f75, #cf8c72, #ce8a6e, #ce876b, #ce8669, #ce8568, #ce8466, #ce8466, #ce8466, #ce8466, #cc7b5b);
+}
+.ms_site-wrapper .toTopBtn {
+  position: fixed;
+  z-index: 1;
+  top: 95vh;
+  right: 25px;
+  color: #f3c143;
 }
 .ms_site-wrapper .ms_jumbotron, .ms_site-wrapper .ms_chi-siamo {
   height: 100vh;
@@ -10088,9 +10096,9 @@ body {
   cursor: pointer;
 }
 .ms_site-wrapper header > label.ms_menu-icon > .ms_navicon {
+  background-color: #f3c143;
   position: absolute;
   display: block;
-  background: #000;
   content: "";
   height: 2px;
   transition: background 0.2s ease-out;
@@ -10098,7 +10106,7 @@ body {
 }
 .ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:before,
 .ms_site-wrapper header > label.ms_menu-icon > .ms_navicon:after {
-  background: #000;
+  background-color: #f3c143;
   content: "";
   height: 100%;
   position: absolute;
@@ -10114,25 +10122,71 @@ body {
 .ms_site-wrapper header .ms_jumbotron {
   height: 100vh;
 }
-.ms_site-wrapper header .ms_jumbotron #carousel {
+.ms_site-wrapper header .ms_jumbotron .carousel {
+  position: relative;
   height: 100%;
 }
-.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner {
+.ms_site-wrapper header .ms_jumbotron .carousel .ms_title {
+  z-index: 1;
+  font-family: "Dosis", sans-serif;
+  font-size: 80px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .ms_title span {
+  font-size: 160px;
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner {
   height: 100%;
 }
-.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item {
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item.slide-1 {
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-1 {
   background-image: url(/images/bg-1.jpg?ed79dbe61a578f0b82fdfd99e5e92cc4);
 }
-.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item.slide-2 {
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-2 {
   background-image: url(/images/bg-2.jpg?7d293238816a2fc11dfc43665ec66ab1);
 }
-.ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item.slide-3 {
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-3 {
   background-image: url(/images/bg-3.jpg?b27ef924d28000a75586daac8d88165c);
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-4 {
+  background-image: url(/images/bg-4.jpg?38a5bdda6bc49347704110e758d74f50);
+  background-position: center;
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-5 {
+  background-image: url(/images/bg-5.jpg?a6dfe39affcf67f0cd8143b55897f67e);
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-6 {
+  background-image: url(/images/bg-6.jpg?6e43b0304e2c71169784dea3b94297a2);
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-7 {
+  background-image: url(/images/bg-7.jpg?0a2d6939138d52153134232a977a09fd);
+  background-position: center;
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-8 {
+  background-image: url(/images/bg-8.jpg?6ea1125d94ae8e25e07b94d0e9192fc1);
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-9 {
+  background-image: url(/images/bg-9.jpg?76b96cc69747e8c6aac55cb5f7b81806);
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-10 {
+  background-image: url(/images/bg-10.jpg?b190b1b750961cde05720945ec48c75d);
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-11 {
+  background-image: url(/images/bg-11.jpg?e7ced5d084ad014db205df1ef15acb38);
+  background-position: center;
+}
+.ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-12 {
+  background-image: url(/images/bg-12.jpg?8e32c27d5792f452eddad5a4d0c39bef);
+  background-position: right;
 }
 .ms_site-wrapper main .card-columns {
   -moz-column-count: 1;
@@ -10182,6 +10236,7 @@ body {
 }
 .ms_site-wrapper footer .ms_map .ms_address {
   padding: 2rem;
+  font-size: 23px;
 }
 .ms_site-wrapper footer .ms_contacts a {
   color: #f3c143b0;
@@ -10230,6 +10285,10 @@ body {
   }
   .ms_site-wrapper header .ms_jumbotron #carousel .carousel-inner .carousel-item {
     height: 100%;
+  }
+  .ms_site-wrapper main p:first-child {
+    line-height: 40px;
+    font-size: 20px;
   }
   .ms_site-wrapper main,
 .ms_site-wrapper footer {

@@ -28,4 +28,17 @@ $( document ).ready(function() {
       $(this).parents('#ms_nav').siblings(checkBox).prop('checked', false);
     });
   });
+
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 20) {
+  //     $('#toTopBtn').fadeIn( "slow", function() {
+  //       $(this).show();
+  //     });
+  //   } else {
+  //     $('#toTopBtn').fadeOut( "slow", function() {
+  //       $(this).show();
+  //     });
+  //   }
+  // });
+    
 });
