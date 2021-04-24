@@ -10183,6 +10183,9 @@ body {
 .ms_site-wrapper footer .ms_map .ms_address {
   padding: 2rem;
 }
+.ms_site-wrapper footer .ms_contacts a {
+  color: #f3c143b0;
+}
 
 @media (min-width: 768px) {
   .ms_site-wrapper header {
