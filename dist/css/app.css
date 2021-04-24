@@ -10010,6 +10010,7 @@ body {
 }
 
 .ms_site-wrapper {
+  min-width: 328px;
   background-image: linear-gradient(to bottom, #cf9179, #cf8f75, #cf8c72, #ce8a6e, #ce876b, #ce8669, #ce8568, #ce8466, #ce8466, #ce8466, #ce8466, #cc7b5b);
 }
 .ms_site-wrapper .toTopBtn {
@@ -10149,7 +10150,7 @@ body {
   text-shadow: -4px 4px #4d1313;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .ms_title span {
-  font-size: 160px;
+  font-size: 130px;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner {
   height: 100%;
