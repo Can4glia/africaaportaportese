@@ -46,11 +46,11 @@ body {
 
     .ms_box-icon {
 
-      width: 72px;
+      width: 75px;
       position: fixed;
       z-index: 2;
-      right: 5px;
-      top: 13px;
+      right: 15px;
+      top: 15px;
 
       .ms_africa-icon {
         width: 100%;
@@ -114,7 +114,7 @@ body {
     > label.ms_menu-icon {
       
       position: fixed;
-      right: 25px;
+      right: 40px;
       user-select: none;
       z-index: 9;
       margin: 18px 0 18px 0;
@@ -172,8 +172,9 @@ body {
           top: 10%;
           left: 50%;
           transform: translateX(-50%);
-          color: white;
+          color: #e8b153;
           text-align: center;
+          text-shadow: -4px 4px #4d1313;
 
           span {
 
@@ -301,7 +302,7 @@ body {
 
     .ms_contacts a {
 
-      color: #f3c143b0;
+      color: #f3c143;
     }
   }
 }
@@ -318,8 +319,7 @@ body {
 
       .ms_box-icon {
 
-        position: absolute;
-        top: 5px;
+        display: none;
   
         .ms_africa-icon {
           width: 100%;
