@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
 @import "../libraries/custom/mixins";
+
 body {
 
   font-family: 'Fira Sans', sans-serif;
@@ -9,10 +10,16 @@ body {
   font-weight: bolder;
 }
 
-
 .ms_site-wrapper {
 
   min-width: 328px;
+
+  // .ms_go-up {
+  //   position: fixed;
+  //   bottom: 15px;
+  //   right: 15px;
+  //   z-index: 2;
+  // }
 
   .toTopBtn {
 
@@ -55,7 +62,15 @@ body {
       top: 15px;
 
       .ms_africa-icon {
+
         width: 100%;
+        filter: 
+        invert(10%) 
+        sepia(80%) 
+        saturate(590%) 
+        hue-rotate(370deg) 
+        brightness(100%) 
+        contrast(100%);
       }
     }
     

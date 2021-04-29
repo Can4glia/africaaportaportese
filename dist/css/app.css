@@ -10038,6 +10038,7 @@ body {
 }
 .ms_site-wrapper header .ms_box-icon .ms_africa-icon {
   width: 100%;
+  filter: invert(10%) sepia(80%) saturate(590%) hue-rotate(370deg) brightness(100%) contrast(100%);
 }
 .ms_site-wrapper header #ms_menu-btn {
   display: none;
@@ -10161,43 +10162,43 @@ body {
   background-repeat: no-repeat;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-1 {
-  background-image: url(/images/bg-1.jpg?ed79dbe61a578f0b82fdfd99e5e92cc4);
+  background-image: url(/images/bg-1.jpg?de62feb1d7aa6844e04b86ae902e204d);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-2 {
-  background-image: url(/images/bg-2.jpg?7d293238816a2fc11dfc43665ec66ab1);
+  background-image: url(/images/bg-2.jpg?cd51e24acb235147f1fd23415e808777);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-3 {
-  background-image: url(/images/bg-3.jpg?b27ef924d28000a75586daac8d88165c);
+  background-image: url(/images/bg-3.jpg?47af69aaa1cd8ae6cf3ff0832f4dacd9);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-4 {
-  background-image: url(/images/bg-4.jpg?3e7cd39819ac81a0113e858b6ac1f13d);
+  background-image: url(/images/bg-4.jpg?5ce13f33be99b61393fc283bf60229a1);
   background-position: center;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-5 {
-  background-image: url(/images/bg-5.jpg?285f0d32c79f606e0be74d777eec8547);
+  background-image: url(/images/bg-5.jpg?25266861a0456f359bf3c986399f0653);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-6 {
-  background-image: url(/images/bg-6.jpg?e64bceb7e5b22f25f7af7d886515b38d);
+  background-image: url(/images/bg-6.jpg?4328ad124e455b92a3e16369dde2ce63);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-7 {
-  background-image: url(/images/bg-7.jpg?b0a912dbc45d4ff4444f05247b8a58a0);
+  background-image: url(/images/bg-7.jpg?3ce3677356d1984804305341a060b0ee);
   background-position: center;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-8 {
-  background-image: url(/images/bg-8.jpg?197b17c6ba89aecd6674c0251ca7e03d);
+  background-image: url(/images/bg-8.jpg?3d1877531d5057003a563b4490e900e9);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-9 {
-  background-image: url(/images/bg-9.jpg?1836d64796d2b9ea1ae3351cf9c4d370);
+  background-image: url(/images/bg-9.jpg?a0ea156dd7a02ddb90c402654a29aed9);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-10 {
-  background-image: url(/images/bg-10.jpg?5e3697b04f63140af710c532f5546b98);
+  background-image: url(/images/bg-10.jpg?73853e1c4a1ec1fb0a9d09b5b0383d8c);
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-11 {
-  background-image: url(/images/bg-11.jpg?784df92797549aa67c21d65d8d5a001f);
+  background-image: url(/images/bg-11.jpg?f05dc0f7054a82165686d218438732d5);
   background-position: center;
 }
 .ms_site-wrapper header .ms_jumbotron .carousel .carousel-inner .carousel-item.slide-12 {
-  background-image: url(/images/bg-12.jpg?13c42810606175cb64e6dfa7c21feb4a);
+  background-image: url(/images/bg-12.jpg?d33fcf049d56f0acb34e6c7f14245720);
   background-position: right;
 }
 .ms_site-wrapper main .card-columns {
