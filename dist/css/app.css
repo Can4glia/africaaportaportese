@@ -10013,13 +10013,6 @@ body {
   min-width: 328px;
   background-image: linear-gradient(to bottom, #cf9179, #cf8f75, #cf8c72, #ce8a6e, #ce876b, #ce8669, #ce8568, #ce8466, #ce8466, #ce8466, #ce8466, #cc7b5b);
 }
-.ms_site-wrapper .toTopBtn {
-  position: fixed;
-  z-index: 1;
-  top: 95vh;
-  right: 25px;
-  color: #f3c143;
-}
 .ms_site-wrapper .ms_jumbotron, .ms_site-wrapper .ms_chi-siamo {
   height: 100vh;
 }
