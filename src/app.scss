@@ -231,6 +231,30 @@ body {
 
   main {
 
+    min-height: 100vh;
+
+    .ms_batik {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .ms_bogolan {
+      padding-top: 14px !important;
+    }
+
+    #products {
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      a {
+        color: #f3c143;
+        font-size: 70px;
+      }
+    }
+
     .card-columns {
 
       column-count: 1;

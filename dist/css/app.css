@@ -10194,6 +10194,26 @@ body {
   background-image: url(/images/bg-12.jpg?d33fcf049d56f0acb34e6c7f14245720);
   background-position: right;
 }
+.ms_site-wrapper main {
+  min-height: 100vh;
+}
+.ms_site-wrapper main .ms_batik {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.ms_site-wrapper main .ms_bogolan {
+  padding-top: 14px !important;
+}
+.ms_site-wrapper main #products ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.ms_site-wrapper main #products a {
+  color: #f3c143;
+  font-size: 70px;
+}
 .ms_site-wrapper main .card-columns {
   -moz-column-count: 1;
        column-count: 1;
