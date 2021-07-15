@@ -10197,12 +10197,6 @@ body {
 .ms_site-wrapper main {
   min-height: 100vh;
 }
-.ms_site-wrapper main .ms_batik {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 .ms_site-wrapper main .ms_bogolan {
   padding-top: 14px !important;
 }
