@@ -10212,6 +10212,7 @@ body {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
   grid-gap: 1.25rem !important;
+  padding-left: 0 !important;
 }
 .ms_site-wrapper main .card-columns li {
   list-style-type: none;
