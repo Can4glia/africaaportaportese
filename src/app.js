@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		checkBox.checked = !checkBox.checked;
 	});
 
+	//carousel
 	const carousel = document.querySelector("#carousel");
 	const carouselPrev = carousel.querySelector(".carousel-control-prev");
 	const carouselNext = carousel.querySelector(".carousel-control-next");
@@ -35,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
 				slide.classList.remove("active");
 			}
 		});
+		const nextIndex = (currentIndex + 1) % slides.length;
+		slides[currentIndex].style.opacity = 0;
+		slides[currentIndex].style.zIndex = 0;
+		slides[nextIndex].style.opacity = 1;
+		slides[nextIndex].style.zIndex = 1;
+		currentIndex = nextIndex;
 	}
 
 	// smooth scroll via anchor, a native function ES2018
@@ -46,14 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			target.scrollIntoView({ behavior: "smooth" });
 			// and close sidebar
 			const checkBox = document.querySelector("#ms_menu-btn");
-			const nav = anchor.closest("#ms_nav");
-			if (nav) {
-				const siblingCheckBox =
-					nav.nextElementSibling.querySelector("#ms_menu-btn");
-				siblingCheckBox.checked = false;
-			} else {
-				checkBox.checked = false;
-			}
+			checkBox.checked = false;
 		});
 	});
 
@@ -69,14 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
 			}, 500);
 		}
 	});
-
-	// // remove fragment as much as it can go without adding an entry in browser history:
-	// window.location.replace("#");
-
-	// // slice off the remaining '#' in HTML5:
-	// if (typeof window.history.replaceState == 'function') {
-	//   history.replaceState({}, '', window.location.href.slice(0, -1));
-	// }
-
-	// console.log(window.location.href);
 });

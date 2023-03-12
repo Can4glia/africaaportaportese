@@ -27,7 +27,6 @@
 	},
 	"homepage": "https://github.com/Can4glia/bogolanportaportese#readme",
 	"devDependencies": {
-		"bootstrap": "^4.6.2",
 		"browser-sync": "^2.26.14",
 		"laravel-mix": "^6.0.13",
 		"postcss": "^8.2.7",
