@@ -1,53 +1,82 @@
-$( document ).ready(function() {
+document.addEventListener("DOMContentLoaded", function () {
+	// burger menu
+	const checkBox = document.querySelector("#ms_menu-btn");
+	checkBox.checked = false;
 
-  // burger menu
-  var checkBox = $('#ms_menu-btn');
-  checkBox.prop('checked', false);
+	document.querySelector("#ms_toggle").addEventListener("click", () => {
+		checkBox.checked = !checkBox.checked;
+	});
 
-  $('#ms_toggle').click(function() {
+	const carousel = document.querySelector("#carousel");
+	const carouselPrev = carousel.querySelector(".carousel-control-prev");
+	const carouselNext = carousel.querySelector(".carousel-control-next");
+	const slides = Array.from(carousel.querySelectorAll(".carousel-item"));
+	let currentIndex = slides.findIndex((slide) =>
+		slide.classList.contains("active")
+	);
 
-    if ( $(this).siblings(checkBox).prop('checked') == false ) {
+	carouselPrev.addEventListener("click", () => {
+		currentIndex =
+			currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+		updateCarousel();
+	});
 
-      $(this).siblings(checkBox).prop('checked', true);
-      
-    } else {
+	carouselNext.addEventListener("click", () => {
+		currentIndex =
+			currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+		updateCarousel();
+	});
 
-      $(this).siblings(checkBox).prop('checked', false);
-    }
-  });
+	function updateCarousel() {
+		slides.forEach((slide, index) => {
+			if (index === currentIndex) {
+				slide.classList.add("active");
+			} else {
+				slide.classList.remove("active");
+			}
+		});
+	}
 
-  // smooth scroll via anchor, a native function ES2018
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {    
-    anchor.addEventListener('click', function (e) {        
-      e.preventDefault();
-      // go (smooth)
-      document.querySelector(this.getAttribute('href')).scrollIntoView({            
-        behavior: 'smooth'        
-      });
-      // and close sidebar   
-      $(this).parents('#ms_nav').siblings(checkBox).prop('checked', false);
-    });
-  });
+	// smooth scroll via anchor, a native function ES2018
+	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+		anchor.addEventListener("click", (e) => {
+			e.preventDefault();
+			// go (smooth)
+			const target = document.querySelector(anchor.getAttribute("href"));
+			target.scrollIntoView({ behavior: "smooth" });
+			// and close sidebar
+			const checkBox = document.querySelector("#ms_menu-btn");
+			const nav = anchor.closest("#ms_nav");
+			if (nav) {
+				const siblingCheckBox =
+					nav.nextElementSibling.querySelector("#ms_menu-btn");
+				siblingCheckBox.checked = false;
+			} else {
+				checkBox.checked = false;
+			}
+		});
+	});
 
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 20) {
-  //     $('#toTopBtn').fadeIn( "slow", function() {
-  //       $(this).show();
-  //     });
-  //   } else {
-  //     $('#toTopBtn').fadeOut( "slow", function() {
-  //       $(this).show();
-  //     });
-  //   }
-  // });
+	window.addEventListener("scroll", () => {
+		const toTopBtn = document.querySelector("#toTopBtn");
+		if (window.scrollY > 20) {
+			toTopBtn.style.display = "block";
+			toTopBtn.style.opacity = "1";
+		} else {
+			toTopBtn.style.opacity = "0";
+			setTimeout(() => {
+				toTopBtn.style.display = "none";
+			}, 500);
+		}
+	});
 
-  // // remove fragment as much as it can go without adding an entry in browser history:
-  // window.location.replace("#");
+	// // remove fragment as much as it can go without adding an entry in browser history:
+	// window.location.replace("#");
 
-  // // slice off the remaining '#' in HTML5:    
-  // if (typeof window.history.replaceState == 'function') {
-  //   history.replaceState({}, '', window.location.href.slice(0, -1));
-  // }
+	// // slice off the remaining '#' in HTML5:
+	// if (typeof window.history.replaceState == 'function') {
+	//   history.replaceState({}, '', window.location.href.slice(0, -1));
+	// }
 
-  // console.log(window.location.href);
+	// console.log(window.location.href);
 });

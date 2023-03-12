@@ -1,2 +1,2 @@
 npx mix watch
-browser-sync start --server --files 'index.html, dist/css, dist/js'
+npx browser-sync start --server --files 'index.html, dist/css, dist/js'
