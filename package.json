@@ -1,33 +1,38 @@
 {
-  "name": "africaaportaportese",
-  "version": "1.0.0",
-  "description": "sito-vetrina",
-  "main": "www.africaaportaportese.it",
-  "scripts": {
-    "watch": "npx mix --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Can4glia/africaaportaportese.git"
-  },
-  "keywords": ["bogolan", "portaportese", "africa", "rosaria", "tessuti"],
-  "author": "Can4glia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Can4glia/africaaportaportese/issues"
-  },
-  "homepage": "https://github.com/Can4glia/africaaportaportese#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "laravel-mix": "^6.0.13",
-    "postcss": "^8.2.7",
-    "resolve-url-loader": "^3.1.2",
-    "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
-  },
-  "dependencies": {
-    "bootstrap": "^4.6.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
-  }
+	"name": "bogolanportaportese",
+	"version": "1.0.0",
+	"engines": {
+		"node": "14.x"
+	},
+	"description": "Scopri i migliori tessuti in Bogolan a Roma presso il più bel banco di Porta Portese. Ampia selezione di tessuti africani di alta qualità. Visita il nostro sito vetrina ora.",
+	"main": "www.bogolanportaportese.it",
+	"scripts": {
+		"watch": "npx mix --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Can4glia/bogolanportaportese.git"
+	},
+	"keywords": [
+		"bogolan",
+		"portaportese",
+		"africa",
+		"rosaria",
+		"tessuti"
+	],
+	"author": "Can4glia",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Can4glia/bogolanportaportese/issues"
+	},
+	"homepage": "https://github.com/Can4glia/bogolanportaportese#readme",
+	"devDependencies": {
+		"bootstrap": "^4.6.2",
+		"browser-sync": "^2.26.14",
+		"laravel-mix": "^6.0.13",
+		"postcss": "^8.2.7",
+		"resolve-url-loader": "^3.1.2",
+		"sass": "^1.32.8",
+		"sass-loader": "^10.1.1"
+	}
 }
