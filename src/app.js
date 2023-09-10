@@ -35,18 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				slide.classList.remove("active");
 			}
 		});
-
-		slides.forEach((slide) => {
-			slide.style.opacity = 0;
-			slide.style.zIndex = 0;
-		});
-
-		slides[currentIndex].style.opacity = 1;
-		slides[currentIndex].style.zIndex = 1;
-
-		const nextIndex = (currentIndex + 1) % slides.length;
-		slides[nextIndex].style.opacity = 0;
-		slides[nextIndex].style.zIndex = 0;
 	}
 
 	updateCarousel();
