@@ -10970,7 +10970,7 @@ body {
 }
 
 .ms_site-wrapper header .ms_jumbotron .carousel .ms_title {
-  z-index: 1;
+  z-index: 2;
   font-family: "Dosis", sans-serif;
   font-size: calc(2rem + 2vmin);
   position: absolute;

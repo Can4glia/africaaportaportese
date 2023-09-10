@@ -12,19 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	const carouselPrev = carousel.querySelector(".carousel-control-prev");
 	const carouselNext = carousel.querySelector(".carousel-control-next");
 	const slides = Array.from(carousel.querySelectorAll(".carousel-item"));
+
 	let currentIndex = slides.findIndex((slide) =>
 		slide.classList.contains("active")
 	);
 
 	carouselPrev.addEventListener("click", () => {
-		currentIndex =
-			currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+		currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
 		updateCarousel();
 	});
 
 	carouselNext.addEventListener("click", () => {
-		currentIndex =
-			currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+		currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
 		updateCarousel();
 	});
 
@@ -36,13 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
 				slide.classList.remove("active");
 			}
 		});
+
+		slides.forEach((slide) => {
+			slide.style.opacity = 0;
+			slide.style.zIndex = 0;
+		});
+
+		slides[currentIndex].style.opacity = 1;
+		slides[currentIndex].style.zIndex = 1;
+
 		const nextIndex = (currentIndex + 1) % slides.length;
-		slides[currentIndex].style.opacity = 0;
-		slides[currentIndex].style.zIndex = 0;
-		slides[nextIndex].style.opacity = 1;
-		slides[nextIndex].style.zIndex = 1;
-		currentIndex = nextIndex;
+		slides[nextIndex].style.opacity = 0;
+		slides[nextIndex].style.zIndex = 0;
 	}
+
+	updateCarousel();
 
 	// smooth scroll via anchor, a native function ES2018
 	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
