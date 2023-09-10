@@ -10904,7 +10904,7 @@ body {
   width: 0;
   transition: 0.8s ease-out;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   background-color: #c97655;
   height: 100vh;
 }
