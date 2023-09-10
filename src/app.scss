@@ -29,8 +29,7 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-		"Noto Color Emoji";
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -2284,8 +2283,8 @@ textarea.form-control.is-valid {
 			right 0.75rem center/8px 10px no-repeat,
 		#fff
 			url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
-			center right 1.75rem / calc(0.75em + 0.375rem)
-			calc(0.75em + 0.375rem) no-repeat;
+			center right 1.75rem / calc(0.75em + 0.375rem) calc(0.75em + 0.375rem)
+			no-repeat;
 }
 .was-validated .custom-select:valid:focus,
 .custom-select.is-valid:focus {
@@ -2408,8 +2407,8 @@ textarea.form-control.is-invalid {
 			right 0.75rem center/8px 10px no-repeat,
 		#fff
 			url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e")
-			center right 1.75rem / calc(0.75em + 0.375rem)
-			calc(0.75em + 0.375rem) no-repeat;
+			center right 1.75rem / calc(0.75em + 0.375rem) calc(0.75em + 0.375rem)
+			no-repeat;
 }
 .was-validated .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
@@ -4034,8 +4033,8 @@ input[type="button"].btn-block {
 	border-radius: 1rem;
 	-webkit-transition: background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	transition: background-color 0.15s ease-in-out,
-		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
 	-webkit-appearance: none;
 	appearance: none;
 }
@@ -4065,8 +4064,8 @@ input[type="button"].btn-block {
 	border-radius: 1rem;
 	-moz-transition: background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	transition: background-color 0.15s ease-in-out,
-		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
 	-moz-appearance: none;
 	appearance: none;
 }
@@ -4099,8 +4098,8 @@ input[type="button"].btn-block {
 	border-radius: 1rem;
 	-ms-transition: background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	transition: background-color 0.15s ease-in-out,
-		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
 	appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4149,8 +4148,8 @@ input[type="button"].btn-block {
 .custom-control-label::before,
 .custom-file-label,
 .custom-select {
-	transition: background-color 0.15s ease-in-out,
-		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
 	.custom-control-label::before,
@@ -5921,8 +5920,7 @@ a.close.disabled {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-		"Noto Color Emoji";
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
@@ -6038,8 +6036,7 @@ a.close.disabled {
 	max-width: 276px;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-		"Noto Color Emoji";
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
@@ -10858,8 +10855,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzlnC_W6EQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -10881,8 +10878,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzloC_U.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* vietnamese */
 @font-face {
@@ -10892,8 +10889,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzlnC_W6EQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -10915,8 +10912,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzloC_U.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* vietnamese */
 @font-face {
@@ -10926,8 +10923,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzlnC_W6EQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -10949,8 +10946,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzloC_U.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* vietnamese */
 @font-face {
@@ -10960,8 +10957,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzlnC_W6EQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -10983,8 +10980,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzloC_U.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* vietnamese */
 @font-face {
@@ -10994,8 +10991,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzlnC_W6EQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11017,8 +11014,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/dosis/v27/HhyaU5sn9vOmLzloC_U.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11069,8 +11066,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9A4kDNxMZdWfMOD5VvkrCqUT_fcWTP.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11092,8 +11089,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9A4kDNxMZdWfMOD5VvkrCqUTDfcQ.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11144,8 +11141,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9f4kDNxMZdWfMOD5VvkrAGQCf3VFn2lg.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11167,8 +11164,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9f4kDNxMZdWfMOD5VvkrAGQCf4VFk.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11219,8 +11216,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9f4kDNxMZdWfMOD5VvkrBiQyf3VFn2lg.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11242,8 +11239,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9f4kDNxMZdWfMOD5VvkrBiQyf4VFk.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11294,8 +11291,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9C4kDNxMZdWfMOD5VvkrjGYTLHdQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11317,8 +11314,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9C4kDNxMZdWfMOD5VvkrjJYTI.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11369,8 +11366,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9C4kDNxMZdWfMOD5Vn9LjGYTLHdQ.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11392,8 +11389,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9C4kDNxMZdWfMOD5Vn9LjJYTI.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11444,8 +11441,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9B4kDNxMZdWfMOD5VnWKneSRf6TF0.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11467,8 +11464,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9B4kDNxMZdWfMOD5VnWKneRhf6.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11519,8 +11516,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9B4kDNxMZdWfMOD5VnPKreSRf6TF0.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11542,8 +11539,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9B4kDNxMZdWfMOD5VnPKreRhf6.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11594,8 +11591,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11617,8 +11614,8 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9E4kDNxMZdWfMOD5Vvl4jL.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
@@ -11669,8 +11666,8 @@ body {
 	font-display: swap;
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9B4kDNxMZdWfMOD5VnZKveSRf6TF0.woff2)
 		format("woff2");
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+		U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
@@ -11692,6 +11689,6 @@ body {
 	src: url(https://fonts.gstatic.com/s/firasans/v16/va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2)
 		format("woff2");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-		U+2215, U+FEFF, U+FFFD;
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
 }
